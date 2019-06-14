@@ -140,3 +140,88 @@ help(sent.__init__())
 help(sent.splitlines())
 sent = 'Print("Hi")'
 # eval(sent)
+a = 1
+print(str(a))
+print(float(a))
+print(int(a))
+
+
+# Object Oriented programming(Classes, object etc)
+class Person:
+    pass
+
+
+p = Person()
+print(p)
+
+
+class Person:
+    def getname(self, initial):
+        print("Kishore", initial)
+
+    def getage(self, words):
+        print("24", words)
+
+
+p = Person()
+
+print(p.getname("N"))
+print(p.getage("Twenty Four"))
+
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def getname(self):
+        print("Hi " + self.name)
+
+    def getage(self):
+        print("Your age is " + self.age)
+
+
+p = Person("Kishore", "Twenty Four")
+p1 = Person("Praveen", "Twenty eight")
+
+print(p.getname())
+print(p.getage())
+print(p1.getname())
+print(p1.getage())
+
+
+
+#Inheritence
+
+class Parent:
+    def __init__(self):
+        print("This is parent class")
+
+    def parentfunc(self):
+        print("This is parent function")
+
+
+
+parent = Parent()
+print(parent.parentfunc())
+
+
+
+class Child(Parent):
+    def __init__(self):
+        print("This is Child class")
+
+    def childfunc(self):
+        print("This is child function")
+
+
+
+child = Child()
+print(child.childfunc())
+print(child.parentfunc())
+
+
+
+#Overwritting
+
